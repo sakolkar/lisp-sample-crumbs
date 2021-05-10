@@ -23,8 +23,9 @@
 ;;
 ;; Routing rules
 
-(defroute "/" ()
-  (render #P"index.html"))
+(defroute "/qwer" ()
+  (render #P"pages/index.js" (list :a-list (list 1 2 3)
+                                   :crumbs-path (config :crumbs))))
 
 ;;
 ;; Error pages

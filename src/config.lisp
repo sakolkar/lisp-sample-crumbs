@@ -23,10 +23,10 @@
   `(:databases ((:maindb :sqlite3 :database-name ":memory:"))))
 
 (defconfig |development|
-  '())
+  '(:crumbs "/js"))
 
 (defconfig |production|
-  '())
+  '(:crumbs "https://cdn.statically.io/gh/sakolkar/crumbs/main/src"))
 
 (defconfig |test|
   '())
